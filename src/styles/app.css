@@ -1,0 +1,98 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 800px;
+}
+
+.Posts, .Comments {
+	width: 800px;
+}
+
+.post, .comment {
+	display: flex;
+	padding: 15px;
+	border: 2px solid teal;
+	margin-top: 15px;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	transform: translateX-(350px);
+}
+.postError {
+	@apply font-bold text-red-400 text-3xl my-3 mb-5;
+}
+
+.post_btn {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.post_content, .comment_content {
+	height: min-content;
+}
+
+.post-enter {
+	opacity: 0;
+	transform: translateX(-100%);
+}
+.post-enter-active {
+	opacity: 1;
+	transform: translateX(0px);
+	transition: all 500ms ease-in;
+}
+.post-exit {
+	opacity: 1;
+	transform: translateX(0px);
+}
+.post-exit-active {
+	opacity: 0;
+	transform: translateX(-100%);
+	transition: all 350ms ease-in;
+}
+
+.page_wrapper {
+	margin-top: 30px;
+	display: flex;
+}
+
+.page {
+	padding: 10px;
+	border: 1px solid teal;
+	cursor: pointer;
+}
+
+.page_current {
+	border: 2px solid orange;
+	font-weight: bold;
+}
+
+.navbar {
+	height: 50px;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+	background: silver;
+}
+
+.navbar_link {
+	margin-left: auto;
+}
+
+.navbar_path {
+	@apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600;
+}

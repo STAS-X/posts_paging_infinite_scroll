@@ -1,0 +1,14 @@
+.btnDel {
+    @apply bg-amber-400 min-w-max border-2 border-zinc-400 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed hover:enabled:bg-amber-500 text-white font-bold mx-0 my-2 rounded;
+
+}
+
+.btnShow {
+    @apply bg-green-400 min-w-max border-2 border-zinc-400 cursor-pointer hover:enabled:bg-green-500 text-white font-bold px-1 mx-0 my-2 rounded;
+
+}
+
+.btnAdd {
+    @apply bg-blue-400 min-w-max border-2 border-zinc-400 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed hover:enabled:bg-blue-500 text-white font-bold w-fit px-1 mx-0 my-4 rounded;
+
+}
